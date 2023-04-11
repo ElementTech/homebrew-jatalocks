@@ -5,20 +5,20 @@
 class Terracove < Formula
   desc ""
   homepage "https://github.com/jatalocks/terracove"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jatalocks/terracove/releases/download/v0.0.2/terracove_0.0.2_Darwin_arm64.tar.gz"
-      sha256 "19f2c554b4bfa29abc06ce2731685768adc38df8a81b47047cdd914e39cdd3e5"
+      url "https://github.com/jatalocks/terracove/releases/download/v0.0.3/terracove_0.0.3_Darwin_arm64.tar.gz"
+      sha256 "6bc2eef704b5d1f9221aa93daea3d0d23eeae39b8a6090d020f4c792cad101e2"
 
       def install
         bin.install "terracove"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jatalocks/terracove/releases/download/v0.0.2/terracove_0.0.2_Darwin_x86_64.tar.gz"
-      sha256 "3c3303a926f79407b7ce1089da6de3e03e99d78ac0f92d57d584f943b1c19632"
+      url "https://github.com/jatalocks/terracove/releases/download/v0.0.3/terracove_0.0.3_Darwin_x86_64.tar.gz"
+      sha256 "d6f0f1ccab148b659fd960c297615e628c00d759c81fb2484712d46a63a8bcfd"
 
       def install
         bin.install "terracove"
@@ -27,17 +27,17 @@ class Terracove < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jatalocks/terracove/releases/download/v0.0.2/terracove_0.0.2_Linux_arm64.tar.gz"
-      sha256 "9e2348de66b795d25c771b8faea5fb72d3dc3adccf63bec2245ac75353e6bd1f"
+    if Hardware::CPU.intel?
+      url "https://github.com/jatalocks/terracove/releases/download/v0.0.3/terracove_0.0.3_Linux_x86_64.tar.gz"
+      sha256 "bdcadafed958dc3bacc5bf0b454b1256a198bc1bb7bf6580b59ff5fb0a8a390d"
 
       def install
         bin.install "terracove"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/jatalocks/terracove/releases/download/v0.0.2/terracove_0.0.2_Linux_x86_64.tar.gz"
-      sha256 "8a0857d52a40468907088eba8591bc0f970b6469daf67864dbd2e2a5b095408b"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/jatalocks/terracove/releases/download/v0.0.3/terracove_0.0.3_Linux_arm64.tar.gz"
+      sha256 "a6cdf2271a4cc71df4611a394c58d1c8f83724c5e6706a361a3258fdc4add281"
 
       def install
         bin.install "terracove"
