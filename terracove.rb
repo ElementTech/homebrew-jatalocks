@@ -5,20 +5,20 @@
 class Terracove < Formula
   desc ""
   homepage "https://github.com/jatalocks/terracove"
-  version "0.0.5"
+  version "0.0.6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jatalocks/terracove/releases/download/v0.0.5/terracove_0.0.5_Darwin_arm64.tar.gz"
-      sha256 "f654dc1131764dc32d90c18cfe895f3bd82e35bfe28772942cdaf2ae9dadda15"
+      url "https://github.com/jatalocks/terracove/releases/download/v0.0.6/terracove_0.0.6_Darwin_arm64.tar.gz"
+      sha256 "fd84f131b56c759705e33f1b14a951957d6ba583c2a5962dfd2e7d2cf95a428a"
 
       def install
         bin.install "terracove"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jatalocks/terracove/releases/download/v0.0.5/terracove_0.0.5_Darwin_x86_64.tar.gz"
-      sha256 "601cd316060a99515ffedc93875122ce6095cb4a9a6d7ec18476b4d0330818c8"
+      url "https://github.com/jatalocks/terracove/releases/download/v0.0.6/terracove_0.0.6_Darwin_x86_64.tar.gz"
+      sha256 "c4ec4d876b507e016ff40cddcb32e4be421c4d496355d6eded9ba7d9880d959c"
 
       def install
         bin.install "terracove"
@@ -28,16 +28,16 @@ class Terracove < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/jatalocks/terracove/releases/download/v0.0.5/terracove_0.0.5_Linux_x86_64.tar.gz"
-      sha256 "0325d9cbd7e0f1bb64564ed821ca34044ae23a5d35558f03dbaf3ea78824c1a4"
+      url "https://github.com/jatalocks/terracove/releases/download/v0.0.6/terracove_0.0.6_Linux_x86_64.tar.gz"
+      sha256 "a0a7fa077672a6e69452f34b25e78c7ada17484f0684fa4cb95536eb9c5c1c0d"
 
       def install
         bin.install "terracove"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jatalocks/terracove/releases/download/v0.0.5/terracove_0.0.5_Linux_arm64.tar.gz"
-      sha256 "e7c0b99ee02ca705f28ec1dd3dbdbeb0ea4ee381b1891dd2153153fffceac74c"
+      url "https://github.com/jatalocks/terracove/releases/download/v0.0.6/terracove_0.0.6_Linux_arm64.tar.gz"
+      sha256 "a09c18866a3f3f7f2b5527918bf49651257fecf5159ef19df18236260055967b"
 
       def install
         bin.install "terracove"
